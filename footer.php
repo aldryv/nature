@@ -15,6 +15,3 @@
 	<h4>CONTATO</h4>
 	<h3>(48) 9 8899-8899</h3>
 </footer>
-<div id="copyright">
-	<p><img style="margin-right: 15px;" src="https://komodostudio.com.br/wp/wp-content/uploads/2021/08/icone-webshare.svg">© Copyright - Webshare - Todos os direitos reservados</p>
-</div>
