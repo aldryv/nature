@@ -14,4 +14,3 @@
 	<hr style="background-color: #757575; width: 100%; margin: 25px 0 25px 0;">
 	<h4>CONTATO</h4>
 	<h3>(48) 9 8899-8899</h3>
-</footer>
