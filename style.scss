@@ -1,0 +1,356 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+// Variaveis
+
+$titulos-h3: 'Abril Fatface', cursive;
+$corTitulos: #56CC9D;
+$par: 'Roboto', sans-serif;
+
+// Global
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// Header
+
+#navbarNavAltMarkup { justify-content: end; }
+
+.navbar-nav {
+    
+    a {
+        font: 18px $par;
+        font-weight: 300;
+        text-decoration: underline solid transparent;
+        text-decoration-thickness: 3px;
+        transition: text-decoration 1s ease;
+        color: white !important;
+        text-underline-offset: 5px;
+    }
+
+    a:hover {
+        text-decoration: underline solid Currentcolor;
+        text-decoration-thickness: 3px;
+    }
+}
+
+// Carrossel
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+
+    h5 {
+        font: 4em $titulos-h3;
+    }
+}
+
+// Animais
+
+.titulo-section {
+    font: 2em $titulos-h3;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+#pills-tab {
+    justify-content: center;
+    margin-bottom: 60px !important;
+
+
+    .nav-link { // estiliza a classe .nav-link dentro da ul pills-tab para não estilizar os botões do cabeçalho
+        width: 250px !important;
+        height: 68px;
+        margin: 0 20px 0 20px;
+        border: 3px solid #56CC9D !important;
+        color: $corTitulos !important;
+        font: 24px $titulos-h3;
+        font-weight: 100 !important;
+    }
+    
+    .nav-link.active {
+        background-color: $corTitulos !important;
+        color: white !important;
+    }
+}
+
+.tab-content {
+    text-align: center;
+}
+
+#animais-descricao {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ad-foto {
+
+    img {
+        max-width: 100%;
+        padding: 20px 25px 20px 25px;
+    }
+
+    width: 30%;
+    position: relative;
+    float: none;
+    margin: 0;
+
+    h2 {
+        display: inline-block;
+        padding: 0 20px 2px 20px;
+        min-width: 200px;
+        text-align: center;
+        font: 2em $titulos-h3;
+        position: relative;
+        top: -120px;
+        right: -85px;
+        background: #FF4338;
+        color: white;
+        letter-spacing: 5px;
+    }
+}
+
+.ad-texto {
+    h3 {
+        font: 1.8em $titulos-h3;
+        color: $corTitulos;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    p {
+        text-align: left;
+        font: 1.3em $par;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    width: 30%;
+    padding: 20px 0 20px 0;
+}
+
+.titulo-imagem {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    font: 36px $titulos-h3;
+    color: white;
+    padding: 5px 30px 5px 30px;
+    background: #FF4338;
+}
+
+// Florestas
+
+#florestas {
+    background: #FFF3EA;
+}
+
+#florestas-descricao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fd-foto {
+    width: 100%;
+    position: relative;
+    
+    img { margin-bottom: -30px; }
+}
+
+.titulo-imagem-florestas {
+    max-width: 220px !important;
+    margin: auto;
+    z-index: 1;
+    position: inherit;
+    font: 2em $titulos-h3;
+    color: white;
+    padding: 5px 30px 5px 30px;
+    background: #FF4338;
+}
+
+.fd-texto {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    margin: auto;
+    justify-content: space-between;
+
+
+    div {
+        width: 45%;
+        padding: 50px 0 50px 0;
+    }
+
+    h3 {
+        font: 1.8em $titulos-h3;
+        color: $corTitulos;
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        font: 20px $par;
+        font-weight: 300;
+    }
+}
+
+// Footer
+
+#wp_footer {
+    width: 100%;
+    background: #3B3B3B;
+    padding: 40px 60px 40px 60px;;
+
+    h4 {
+        font: 14px $par;
+        color: white;
+    }
+
+    h3 {
+        font: 26px $par;
+        font-weight: bold;
+        color: white;
+    }
+
+    .footer-nav {
+        float: right;
+        list-style-type: none;
+        margin-bottom: 0 !important;
+
+        li {
+
+            a {
+                text-decoration: underline solid transparent;
+                text-decoration-thickness: 3px;
+                transition: text-decoration 1s ease;
+                color: white;
+                text-underline-offset: 5px;
+            }
+
+            a:hover {
+                text-decoration: underline solid Currentcolor;
+                text-decoration-thickness: 3px;
+            }
+
+            display: inline;
+            font: 20px $par;
+            font-weight: 200;
+            padding: 0 10px 0 10px;
+        }
+    }
+}
+
+#footer-socials {
+    float: right;
+
+    i {
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    li { padding: 0 10px 0 10px !important; }
+}
+
+#copyright {
+    background-color: #292929;
+    width: 100%;
+    height: 50px;
+    padding: 0 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        color: white;
+        font: 12px $par;
+        margin: 0;
+    }
+}
+
+// Media queries
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 1000px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .navbar-nav { align-items: end; }
+
+    .navbar-toggler-icon {
+        background-image: url('assets/mbl-nav.png') !important;
+    }
+
+    .carousel-caption h5 { font-size: 2em; }
+
+    #pills-tab {
+        .nav-link {
+            margin-bottom: 10px;
+        }
+    }
+
+    #animais-descricao {
+        flex-direction: column;
+        
+        img { max-width: 80%; }
+        div { width: 100%; padding: 0 20px 0 20px; }
+    }
+
+    .ad-foto {
+        overflow: hidden;
+        float: none;
+        margin: 0 auto;
+        padding-right: 0px;
+
+        img { padding: 0;}
+        
+        h2 {
+            position: static;
+            margin-top: -10px;
+        }
+    }
+
+    .fd-foto {
+        img { width: 100%; }
+    }
+
+    .fd-texto {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 20px 0 20px;
+
+        div { width: 100%; padding: 0; h3, p { margin-bottom: 30px; }}
+    }
+
+    #wp_footer { text-align: center; }
+
+    #footer-socials {
+        padding: 0 !important;
+        margin: 15px 0 15px 0;
+        text-align: center !important;
+        float: none !important;
+    }
+
+    #footer-nav {
+        float: none !important;
+        text-align: center;
+        padding: 0;
+        li {
+            display: block !important;
+            margin: 15px;
+        }
+    }
+
+    hr {
+        margin: 0 0 25px 0 !important;
+    }
+}
